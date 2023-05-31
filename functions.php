@@ -5,11 +5,14 @@ function boots_register_custom_fields() {
 require_once __DIR__ . '/inc/custom-field-options/metabox.php';
 require_once __DIR__ . '/inc/custom-field-options/theme-options.php';
 }
+
 add_action( 'after_setup_theme', 'crb_load' );
 function crb_load() {
 require_once( get_template_directory() . '/inc/carbon-fields/vendor/autoload.php' );
 \Carbon_Fields\Carbon_Fields::boot();
 }
+
+
   if(function_exists('register_sidebar'))
     register_sidebar(array('name' => 'leftsidebar'));
 	
@@ -28,15 +31,38 @@ require_once( get_template_directory() . '/inc/carbon-fields/vendor/autoload.php
 
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 
-function un_scripts() {
-  wp_enqueue_script('jquery');
-  wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js');
-  wp_localize_script( 'main', 'allAjax', array(
-      'ajaxurl' => admin_url( 'admin-ajax.php' ),
-      'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' )
-    ) );
+// Подключение стилей и nonce для Ajax и скриптов во фронтенд 
+add_action( 'wp_enqueue_scripts', 'my_assets' );
+function my_assets() {
+
+		// Подключение стилей 
+
+		$all_version = "1.0.1";
+		
+		wp_enqueue_style("font-style", get_template_directory_uri()."/css/fonts.css", array(), $all_version, 'all'); //Модальные окна (стили)
+		
+		// Подключение скриптов
+		
+		wp_enqueue_script( 'jquery');
+
+		wp_enqueue_script( 'main_js', get_template_directory_uri().'/js/main.js', array(), $all_version , true); //Модальные окна
+		
+		// if ( is_page(164))
+		// {
+		// 	wp_enqueue_script( 'vue', get_template_directory_uri().'/js/vue.js', array(), ALL_VERSION , true);
+		// 	wp_enqueue_script( 'axios', get_template_directory_uri().'/js/axios.min.js', array(), ALL_VERSION , true);
+		// 	wp_enqueue_script( 'bascet', get_template_directory_uri().'/js/bascet.js', array(), ALL_VERSION , true);
+		// }
+		
+		wp_localize_script( 'main', 'allAjax', array(
+			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' ) 
+		) );
 }
-add_action('wp_enqueue_scripts', 'un_scripts');
+
+//----------------------------------------------------------------------------
+
+
 add_filter('navigation_markup_template', 'un_navigation_template', 10, 2);
 function un_navigation_template($template, $class) {
   return '
