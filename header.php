@@ -313,7 +313,10 @@ ga('send', 'pageview');
 		</div>
 	</div>
 	<div class="header-bottom">
-		<div class=top_line>	
+	
+  <?php get_template_part('template-parts/header-top'); ?>
+
+    <!-- <div class=top_line>	
 			<div class=top_line_cont>
 				<div class='men_all top_line_menu_menu'> <a href="http://1voentorg.ru/оптовые-поставки/">Оптовые поставки</a> <a href="http://1voentorg.ru/производство/">Производство </a><a href="http://1voentorg.ru/контакты/"> Наши магазины </a></div>
 			<ul class="social-menu top_line_menu">
@@ -322,7 +325,8 @@ ga('send', 'pageview');
         <li><a href="https://www.instagram.com/1voentorg/" style="background-image: url(http://1voentorg.ru/wp-content/themes/voentorg/images/instagram.svg);"></a></li>
       </ul>
 			</div>
-		</div>
+		</div> -->
+
 		<div class="container" id=fix_menu>
 			<a href="<?php echo home_url('/');?>" class="logo"></a>
 			<div class='men_all disnon'> <a href="http://1voentorg.ru/оптовые-поставки/">Оптовые поставки</a> <a href="http://1voentorg.ru/производство/">Производство </a><a href="http://1voentorg.ru/контакты/"> Контакты </a></div>

@@ -1,5 +1,5 @@
 <header class="header-top">
 	<div class="container">
-		<?php wp_nav_menu( array('theme_location' => 'menu_corp','menu_class' => 'header-top__menu','container_class' => 'header-top__menu','container' => false )); ?>
+		<?php wp_nav_menu( array('theme_location' => 'deader-top-menu')); ?>
 	</div>
 </header> 
