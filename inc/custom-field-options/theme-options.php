@@ -75,7 +75,7 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           ->set_width(100),
 		Field::make('text', 'ok_lnk', 'Однокласники')
           ->set_width(100),
-		Field::make('text', 'in_lnk', 'instagramm')
+		Field::make('text', 'tg_lnk', 'telegram')
           ->set_width(100),
     ))
     ->add_tab('Контакты', array(

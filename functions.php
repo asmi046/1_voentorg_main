@@ -40,8 +40,9 @@ function my_assets() {
 		// Подключение стилей 
 
 		$all_version = "1.0.1";
-		
+		wp_enqueue_style("null-style", get_template_directory_uri()."/css/null.css", array(), $all_version, 'all'); //Очистка стандартных стилей
 		wp_enqueue_style("font-style", get_template_directory_uri()."/css/fonts.css", array(), $all_version, 'all'); //Модальные окна (стили)
+		wp_enqueue_style("newstyle-style", get_template_directory_uri()."/css/new_style.css", array(), $all_version, 'all'); //Файл с нововведениями
 		wp_enqueue_style("font-head", get_template_directory_uri()."/css/header.css", array(), $all_version, 'all'); 
 		
 		// Подключение скриптов

@@ -8,22 +8,26 @@
     -ms-flex-align: center;
     align-items: center; 
 }
+
+.header-top__wrapper {
+      display: flex;
+      justify-content: space-between;
+}
+
 .header-top__menu {
       display: flex;
       -webkit-box-pack: end;
       -ms-flex-pack: end;
-      justify-content: flex-end; 
+      align-items: center;
+      list-style: none;
 }
     
 .header-top__menu li {
-        margin-left: 45px; 
+        margin-right: 45px; 
 }
 .header-top a {
       font-size: 14px; 
 }
 
-.header-top a:hover {
-        border-bottom: 1px solid #000; 
-}
 
   
