@@ -296,8 +296,10 @@ ga('send', 'pageview');
       </div>
     </div>
   </div>
+  <?php get_template_part('template-parts/header-top'); ?>
 <header class="header">
-	<div class="header-top">
+<!-- 
+	 <div class="header-top">
 		<div class="container">
 			<div class="hamburger">
 				<span class="hamburger-top"></span>
@@ -311,10 +313,11 @@ ga('send', 'pageview');
 		'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s<li class = "mobCat">Каталог продукции</li></ul>',
       ));?>
 		</div>
-	</div>
+	</div> 
+   -->
 	<div class="header-bottom">
 	
-  <?php get_template_part('template-parts/header-top'); ?>
+ 
 
     <!-- <div class=top_line>	
 			<div class=top_line_cont>

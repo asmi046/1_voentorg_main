@@ -9,6 +9,7 @@
     "send_r": "scp -P 9999 -C *.php *.png *.css user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_ms": "scp -P 9999 -C *.css user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_head": "scp -P 9999 -C header.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
+    "send_head-top": "scp -P 9999 -C header.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/template_parts/",
     "send_func": "scp -P 9999 -C functions.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_index": "scp -P 9999 -C index.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_footer": "scp -P 9999 -C footer.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
