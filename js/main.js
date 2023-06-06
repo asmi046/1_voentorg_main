@@ -4,10 +4,10 @@ $(document).ready(function($) {
 		arrows: true,
 		dots: false,
 		infinite: true,
-		speed: 1000,
+		speed: 5000,
 		slidesToShow: 1,
 		autoplay: true,
-		autoplaySpeed: 1800,
+		autoplaySpeed: 5800,
 		adaptiveHeight: true
 	});
 

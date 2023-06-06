@@ -16,7 +16,7 @@
     "send_one": "scp -P 9999 -C mailru-domain6RYVibgKzkiavY1a.html user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "mk_part_carbon": "ssh user1122@1voentorg.ru \"rm  /www/1/wp-content/themes/voentorg/inc\"",
     "send_carbon": "scp -P 9999 -C -r inc user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
-    "send_carbon_fild": "scp -P 9999 -C -r inc/custom-fields-options user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/inc/",
+    "send_carbon_fild": "scp -P 9999 -C -r inc/custom-field-options user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/inc/",
     "send_parts": "scp -P 9999 -C -r pars user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "mk_part_dir": "ssh user1122@1voentorg.ru \"rm  /www/1/wp-content/themes/voentorg/template-parts\"",
     "send_part": "scp -P 9999 -C -r template-parts user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",

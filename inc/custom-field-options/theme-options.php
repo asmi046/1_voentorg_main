@@ -9,6 +9,23 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
       Field::make( 'image', 'as_logo', 'Логотип')
         ->set_width(30),
     ))
+    ->add_tab('Слайдер (New)', array(
+      Field::make('complex', 'slider_index', 'Слайдер на главной')
+        ->add_fields(array(
+          Field::make('image', 'slider_img', 'Картинка слайдера')
+            ->set_width(50),
+          Field::make('text', 'slider_title', 'Заголовок слайдера')
+            ->set_width(50),
+          Field::make('text', 'slider_subtitle', 'Подзаголовок слайдера')
+            ->set_width(50),
+          Field::make('text', 'slider_discount', 'Информация о скидке')
+            ->set_width(50),
+          
+          Field::make('text', 'slider_lnk', 'Ссылка на страницу')
+            ->set_width(50),
+        ))
+    ))
+
     ->add_tab('Слайдер', array(
         Field::make('text', 'as_banner_1_text', 'Текст баннера 1')
           ->set_width(30),

@@ -1,4 +1,4 @@
-<main class="page">
+
 <section class="slide"> 
 		<div class="container">
 
@@ -29,5 +29,4 @@
 							}
 						?>
 			</div>
-		</section>
-</main>
+</section>

@@ -2766,6 +2766,7 @@ article.post {
 
 @media screen and (max-width: 1200px) {
 	.container {
+		width: unset;
 		padding-left: 14px;
 		padding-right: 14px;
 	}
@@ -3356,9 +3357,11 @@ display:block;
 .slick-track{
 	
 }
-.slick-initialized {
+
+/* .slick-initialized {
 	height: 530px;	
-}
+} */
+
 .slick-list{
 height: 532px;	
 }
