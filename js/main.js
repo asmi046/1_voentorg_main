@@ -1,9 +1,14 @@
-jQuery(document).ready(function($) {
-	$('.big-slider .container').slick({
-		'arrows': false,
-		'dots': true,
-		'autoplay': true,
-		'autoplaySpeed': 7000,
+$ = jQuery;
+$(document).ready(function($) {
+	$('.info-sl__slider').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 1800,
+		adaptiveHeight: true
 	});
 
 	$('.hamburger').click(function() {
