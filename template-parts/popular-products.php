@@ -20,7 +20,7 @@
 
 					foreach( $query->posts as $post ){
 						$query->the_post();
-						get_template_part('product-elem');
+						get_template_part('template-parts/product-elem');
 					}  
 					wp_reset_postdata();
 					?>
