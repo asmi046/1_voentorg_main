@@ -5,11 +5,11 @@
 	</a>
 
 	<a href="<?echo get_the_permalink(get_the_ID());?>" class="prod-card__text d-flex">
-		<h4><?echo carbon_get_post_meta(get_the_ID(),"offer_name"); ?></h4>
-		<span class="spacer__vendor">Артикул: <? echo carbon_get_post_meta(get_the_ID(),"offer_sku"); ?></span>
+		<h4><?echo get_the_title(get_the_ID()); ?></h4>
+		<span class="spacer__vendor">Артикул: <? echo carbon_get_post_meta(get_the_ID(), "sku_n"); ?></span>
 		<div class="prod-card__price d-flex">
 			<?php
-				$price_old = carbon_get_post_meta(get_the_ID(),"offer_old_price");
+				$price_old = carbon_get_post_meta(get_the_ID(),"price_old");
 					if( strlen($price_old) == 0 ) { 
 						//echo '	Скидки нет';
 				} else if ( $price_old === 0 || $price_old === '0' ) {
@@ -18,7 +18,7 @@
 					echo "<p class='prod-card__price-old'> $price_old руб.</p>";
 				}
 			?>
-			<p class="prod-card__price-new"><?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?> руб.</p>
+			<p class="prod-card__price-new"><?echo carbon_get_post_meta(get_the_ID(),"price_n"); ?> руб.</p>
 		</div>
 		<p class="prod-card__benefit"><span><?echo carbon_get_post_meta(get_the_ID(),"offer_nal"); ?></span></p>
 	</a>
