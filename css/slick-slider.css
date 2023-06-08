@@ -130,9 +130,7 @@
 .slider__item img {
   position: relative;
   max-width: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
-  opacity: 0.6;
 }
 
 
