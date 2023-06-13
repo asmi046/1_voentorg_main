@@ -195,14 +195,15 @@
 
 .info-sl__text-new {
   position: absolute;
-  top: 14.5%;
-  left: 19%;
+  top: 52.5%;
+  left: 15%;
   max-width: 450px;
   width: 100%;
+  background-color: var(--other-color);
 }
 
 .info-sl__text-new h2 {
-  font-size: 35px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 45px;
   color: #000000;
@@ -214,6 +215,7 @@
   font-size: 16px;
   line-height: 19.2px;
   font-weight: 400;
+  margin: 5px;
 }
 
 

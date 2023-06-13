@@ -1,4 +1,9 @@
-
+:root {
+    --head-color: #D5DFD5;
+    --menu-color: #333333;
+    --catalog-color: #65B965;
+    --other-color:#ffcb00;
+}
 .container {
     width: 1140px;
 	margin-left: auto;
