@@ -197,16 +197,18 @@
 
 .info-sl__text-new {
   position: absolute;
-  top: 14.5%;
+  top: 65.5%;
   left: 19%;
   max-width: 450px;
   width: 100%;
+  margin: 5px;
 }
 
 .info-sl__text-new h2 {
   font-size: 35px;
   font-weight: 700;
   line-height: 45px;
+  text-align: center;
   color: #000000;
   margin-bottom: 20px;
 }
@@ -221,33 +223,15 @@
 
 
 @media (max-width: 320px) {
-  .info-sl__discounts {
-    top: 63%;
-    left: 13%;
-    width: 230px;
-    height: 45px;
-  }
+  .info-sl__discounts {}
 
-  .info-sl__text-new {
-    max-width: 250px;
-    top: 8%;
-    left: 13%;
-  }
+  .info-sl__text-new {}
 }
 
 @media (max-width: 414px) {
-  .info-sl__discounts {
-    top: 60%;
-    left: 18%;
-    width: 230px;
-    height: 45px;
-  }
+  .info-sl__discounts {}
 
-  .info-sl__text-new {
-    max-width: 250px;
-    top: 8%;
-    left: 18%;
-  }
+  .info-sl__text-new {}
 }
 
 @media (max-width: 515px) {
@@ -256,28 +240,12 @@
     height: 35px;
   }
 
-  .info-sl__discounts {
-    top: 60%;
-    left: 10%;
-    font-size: 23px;
-    width: 180px;
-    height: 45px;
-    padding-left: 10px;
-  }
+  .info-sl__discounts {}
 
-  .info-sl__text-new {
-    top: 20%;
-    left: 10%;
-  }
+  .info-sl__text-new {}
 
-  .info-sl__text-new {
-    max-width: 380px;
-  }
 
-  .info-sl__text-new h2 {
-    font-size: 33px;
-    line-height: 23px;
-  }
+  .info-sl__text-new h2 {}
 }
 
 @media (max-width: 550px) {
@@ -302,27 +270,11 @@
 }
 
 @media (max-width: 640px) {
-  .info-sl__discounts {
-    top: 68%;
-    left: 15%;
-    font-size: 23px;
-    width: 250px;
-    height: 35px;
-    padding-left: 10px;
-  }
+  .info-sl__discounts {}
 
-  .info-sl__text-new h2 {
-    font-size: 35px;
-    line-height: 30px;
-    margin-bottom: 13px;
-  }
+  .info-sl__text-new h2 {}
 
-  .info-sl__text-new p {
-    color: #fff;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-  }
+  .info-sl__text-new p {}
 
   .info-sl__text-new:before {
     display: none;
