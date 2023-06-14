@@ -123,6 +123,9 @@ Container::make('post_meta', 'un_custom_post', 'Доп поля')
           ->set_width(50),
 		Field::make( 'text', 'stiker', 'Стикер')
           ->set_width(50),
+		
+    Field::make( 'text', 'nal', 'Наличие')
+          ->set_width(50),
         // Field::make( 'text', 'un_growth', 'Рост')
         //   ->set_width(30),
         // Field::make( 'text', 'un_size', 'Размер')

@@ -6,21 +6,15 @@
 
 					<?
 					$args = array(
-						'posts_per_page' => 8,
-						'post_type' => 'voen',
-						'tax_query' => array(
-							array(
-								'taxonomy' => 'voencat',
-								'field' => 'id',
-								'terms' => array(4)
-							)
-						)
+						'posts_per_page' => 4,
+						'cat' => 272,
 					);
+
 					$query = new WP_Query($args);
 
 					foreach( $query->posts as $post ){
 						$query->the_post();
-						get_template_part('product-elem');
+						get_template_part('template-parts/product-elem');
 					}  
 					wp_reset_postdata();
 					?>

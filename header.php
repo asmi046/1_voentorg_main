@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/fonts/fa/fa-viber.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/fonts/fa/font-awesome.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/slick-slider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/popular-products.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/lightbox.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/jquery.arcticmodal-0.3.css" type="text/css" media="screen" />
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/icon.png" type="image/png">	
