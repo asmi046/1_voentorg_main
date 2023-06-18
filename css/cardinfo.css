@@ -1,0 +1,180 @@
+.cardinfo {
+    padding: 40px 0 35px 0;
+}
+    
+.cards {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-height: 532px;
+    overflow: hidden; }
+
+.cards-item__img-l {
+    background: #C7CC92;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 532px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 360px;
+    flex: 0 0 360px; }
+
+.cards-item__img-l img {
+    max-width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.cards-item__img-l:hover,
+.cards__img:hover {
+    opacity: 0.7; }
+
+.cards-item__img-l,
+.cards__img {
+    position: relative; }
+
+.cards__img {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 251px; }
+
+.cards__img img {
+    max-width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.cards-item__img-r {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 750px; }
+
+.cards__img-1 {
+  background: #B9E9FF;
+  margin-bottom: 30px; }
+
+.cards__img-2 {
+  background: #3397F5;
+  margin-bottom: 30px; }
+
+.cards__img-3 {
+  background: #ADE4E1; }
+
+.cards__img-4 {
+  background: #EEA72A; }
+
+.cards__text {
+  position: absolute;
+  top: 21px;
+  left: 30px; }
+
+.cards-item__img-l .cards__text h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 25px; }
+
+.cards__text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  margin-bottom: 25px; }
+
+.icon-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000; }
+
+.icon-cards:before {
+  content: '';
+  float: left;
+  width: 8px;
+  height: 12px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDggMTIiPg0KICA8aW1hZ2UgaWQ9ImNoZXZyb24tcmlnaHRf0LrQvtC/0LjRjyIgZGF0YS1uYW1lPSJjaGV2cm9uLXJpZ2h0INC60L7Qv9C40Y8iIHdpZHRoPSI4IiBoZWlnaHQ9IjEyIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUFnQUFBQU1DQVlBQUFCZm52eWRBQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBRkZKUkVGVUdGZGpaSUNBRGdZR0JuNEdCb1lzQmdhRy8xQXhNTVhJd01CZ3djREFjQndxT0FOZEVVZ0JDR1F5TURCTXc2WUlwZ0NuSW1RRldCV2hLOEJRUkxJQ0RNY1M3VWk4M2lRcW9IQUdOUUFtSkIwOXo3MEpXQUFBQUFCSlJVNUVya0pnZ2c9PSIvPg0KPC9zdmc+DQo="); }
+
+
+@media (max-width: 1150px) { 
+.cards-item__img-l {
+    margin-right: 10px; }
+
+.cards__img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 49.5%;
+    flex: 0 1 49.5%; }
+}
+
+@media (max-width: 860px) {
+.cards-item__img-l {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%; }
+}
+
+@media (max-width: 768px) { 
+.cardinfo {
+    padding: 0 0 20px 0; }
+}
+
+@media (max-width: 640px) { 
+.cards {
+    max-height: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+.cards-item__img-l {
+    background: #C7CC92;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 532px;
+    margin: 0 0 15px 0; }
+
+.cards-item__img-l {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+
+.cards__img-1,
+.cards__img-2 {
+    margin-bottom: 15px; }
+}
+
+@media (max-width: 530px) {
+.cards__img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+.cards__img-3 {
+    margin-bottom: 15px; }
+}
+
+@media (max-width: 480px) { 
+.cards-item__img-l {
+    max-height: 250px; }
+}

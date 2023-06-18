@@ -5,7 +5,7 @@
 
 .products h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .prod-card {
@@ -17,7 +17,6 @@
     /*  -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;*/
-    margin-bottom: 30px;
 }
 
 .prod-card__body {
@@ -36,7 +35,6 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 1 23%;
     flex: 0 1 23%;
-    margin-bottom: 30px;
 }
 
 .prod-card__body:hover {

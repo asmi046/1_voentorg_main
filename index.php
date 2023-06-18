@@ -20,6 +20,8 @@
 	</div>
 </section>
 <?php get_template_part('template-parts/popular-products');?>
+
+<?php get_template_part('template-parts/cardinfo');?>
 <section class="products-section">
 	<div class="container">
 		<h2 class="section-title"><span class=green> — </span> Популярные товары<span class=green> —</span> </h2>
