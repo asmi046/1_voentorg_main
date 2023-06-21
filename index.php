@@ -23,7 +23,7 @@
 
 <?php get_template_part('template-parts/cardinfo');?>
 
-<?php get_template_part('template-parts/popular-products');?>
+<?php get_template_part('template-parts/favorites-products');?>
 <!-- <section class="products-section"> -->
 
 <!-- 	
@@ -59,7 +59,7 @@
 	</div>
 </section></a>
 
-<?php get_template_part('template-parts/popular-products');?>
+<?php get_template_part('template-parts/new-products');?>
 <!-- 
 <section class="products-section">
 	<div class="container">
