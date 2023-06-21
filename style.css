@@ -1770,6 +1770,7 @@ handheld {
 	position: relative;
 	width: 31%;
 	height: 228px;
+	border-radius: 12px;
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -1778,7 +1779,7 @@ handheld {
 }
 
 .little-sliders__item-title {
-	position: absolute;
+	/* position: absolute;
 	bottom: -1px;
 	left: -2px;
 	height: 70px;
@@ -1791,7 +1792,18 @@ handheld {
 	text-transform: uppercase;
 	font-size: 20px;
 	padding-left: 10px;
-	background-image: url(http://1voentorg.ru/wp-content/uploads/2020/04/plank.png);
+	background-image: url(http://1voentorg.ru/wp-content/uploads/2020/04/plank.png); */
+	position: absolute;
+    bottom: 6%;
+    left: 4%;
+	font-family: 'Jost';
+    line-height: 25px;
+	width: 90%;
+    border-radius: 12px;
+	text-transform: uppercase;
+    font-size: 18px;
+	padding: 2%;
+    background-color: var(--other-color);
 }
 
 .section-title {
@@ -1800,7 +1812,7 @@ handheld {
 	border-bottom: 3px solid #000;
 }
 
-
+/* 
 .products-wrapper {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -1813,8 +1825,8 @@ handheld {
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
-}
-
+} */
+/* 
 .product-loop {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -1941,7 +1953,7 @@ handheld {
 
 .product-loop__more-link:hover {
 	text-decoration: underline;
-}
+} */
 
 .banner-sale {
 	margin-top: 30px;
@@ -2636,19 +2648,19 @@ article.post {
 	margin-bottom: 10px
 }
 
-.product-loop {
+/* .product-loop {
 	max-width: 260px;
 	border: 1px solid #d9d9da;
 	margin: 15px 10px;
 	text-align: center;
 	-webkit-transition: all .4s ease;
 	transition: all .4s ease;
-}
-
+} */
+/* 
 .archive-products__wrap .product-loop {
 	width: 276px;
 	margin: 15px 10px;
-}
+} */
 
 .nav-links {
 	display: -moz-flex;
@@ -3013,24 +3025,24 @@ article.post {
 		padding-top: 10px;
 		border-top: 1px solid lightgray;
 	}
-
+/* 
 	.product-loop:hover {
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 		box-shadow: none;
-	}
+	} */
 
 }
 
 @media screen and (max-width: 862px) {
-	.products-wrapper {
+	/* .products-wrapper {
 		justify-content: center;
 
-	}
-
+	} */
+/* 
 	.product-loop {
 		margin: 20px;
-	}
+	} */
 }
 
 @media screen and (max-width: 640px) {
@@ -3291,11 +3303,11 @@ article.post {
 	.header-bottom-bg {
 		display: none;
 	}
-
+/* 
 	.is-home .product-loop {
 		max-width: inherit;
 		width: 86%;
-	}
+	} */
 
 	.main-slider__item {
 		height: 500px;
@@ -3376,13 +3388,13 @@ article.post {
 		background-color: #005c3d;
 		color: white;
 	}
-
+/* 
 	.archive-products__wrap .product-loop,
 	.product-loop {
 		max-width: 100%;
 		width: 100%;
 		margin: 10px 0;
-	}
+	} */
 
 	.little-sliders__item {
 		width: 100%;

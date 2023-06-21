@@ -22,13 +22,18 @@
 <?php get_template_part('template-parts/popular-products');?>
 
 <?php get_template_part('template-parts/cardinfo');?>
-<section class="products-section">
+
+<?php get_template_part('template-parts/popular-products');?>
+<!-- <section class="products-section"> -->
+
+<!-- 	
 	<div class="container">
 		<h2 class="section-title"><span class=green> — </span> Популярные товары<span class=green> —</span> </h2>
-	</div>
-	<div class="container">
-		<div class="products-wrapper">
-			<?php 
+	</div> -->
+
+	<!-- <div class="container">
+		<div class="products-wrapper"> -->
+			<!-- <?php 
 				$args = array(
 					'posts_per_page' => 4,
 'cat' => 272,
@@ -40,10 +45,11 @@
 						get_template_part('template-parts/product-loop');
 					endwhile;
 				endif; wp_reset_postdata();
-			?>
-		</div>
-	</div>
-</section>
+			?> -->
+		<!-- </div>
+	</div> -->
+	
+<!-- </section> -->
 <a href="http://1voentorg.ru/category/%d1%82%d0%be%d0%b2%d0%b0%d1%80%d1%8b-%d1%81%d0%be-%d1%81%d0%ba%d0%b8%d0%b4%d0%ba%d0%be%d0%b9/">
 <section class="banner-sale">
 	<div class="container" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('action_img'), 'full')[0];?>)">
@@ -52,6 +58,9 @@
 		</div>
 	</div>
 </section></a>
+
+<?php get_template_part('template-parts/popular-products');?>
+<!-- 
 <section class="products-section">
 	<div class="container">
 		<h2 class="section-title"><span class=green> — </span>Новинки <span class=green>— </span></h2>
@@ -73,5 +82,5 @@
 			?>
 		</div>
 	</div>
-</section>
+</section> -->
 <?php get_footer(); ?>

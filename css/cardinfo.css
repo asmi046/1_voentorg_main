@@ -3,6 +3,7 @@
 }
     
 .cards {
+    font-family: 'Jost';
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
