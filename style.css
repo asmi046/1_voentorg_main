@@ -2007,10 +2007,12 @@ handheld {
 }
 
 .footer {
-	background-color: #d2d3d5;
+	background: #333333;
+	font-family: 'Jost';
 	padding-top: 26px;
 	padding-bottom: 56px;
 }
+
 
 .footer ul {
 	list-style: none;
@@ -2030,6 +2032,10 @@ handheld {
 	font-weight: bold;
 }
 
+.footer a {
+	color: #fff;
+}
+
 .footer .container {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -2044,21 +2050,24 @@ handheld {
 }
 
 .footer-title {
+	color: #fff;
 	text-align: center;
 	font-weight: 500;
 	text-transform: uppercase;
 	padding-bottom: 14px;
-
 	margin-bottom: 26px;
 	font-size: 20px;
 }
 
-.footer-phone {
+.footer-address {
+	color: #ed1c24;
+}
+/* .footer-phone {
 	display: block;
 	font-weight: 500;
 	font-size: 30px;
 	margin-bottom: 36px;
-}
+} */
 
 /* 
 .hamburger {
@@ -3544,12 +3553,13 @@ article.post {
 	padding-left: 45px;
 }
 
+/* 
 .tel_bot {
 	font-weight: 100;
 	margin-bottom: 10px;
 	color: #FF0000;
 	font-size: 33px;
-}
+} */
 
 .tab_item img {
 	display: none;
@@ -3616,10 +3626,10 @@ article.post {
 	color: #000000;
 }
 
-.adr_b {
+/* .adr_b {
 	color: black;
 	font-size: 20px;
-}
+} */
 
 .top_line {
 	height: 37px;

@@ -3,9 +3,9 @@
     <div class="footer-block">
       <div class="footer-title"><span class=red> — </span>Информация<span class=red> — </span></div>
       <ul>
-        <li><a href="<?php echo get_the_permalink(7);?>">О нас</a></li>
-        <li><a href="<?php echo get_the_permalink(4325);?>">Оптовые поставки</a></li>
-        <li><a href="<?php echo get_the_permalink(19966);?>">Производство</a></li>
+        <li><a href="<?php echo get_the_permalink(7);?>">Оптовые поставки</a></li>
+        <li><a href="<?php echo get_the_permalink(4325);?>">Производство ателье</a></li>
+        <li><a href="<?php echo get_the_permalink(19966);?>">Контакты</a></li>
       </ul>
     </div>
     <div class="footer-block">
@@ -43,6 +43,7 @@
      
     <!--  <a onclick="ym(25019384,'reachGoal','phone');ga('send', 'event', 'phone', 'click') return true" href="tel:<?php// echo str_replace(array('(', ')', ' ', '-', '_'), '', carbon_get_theme_option('as_phone'))?>" class="footer-phone"><?php// echo carbon_get_theme_option('as_phone');?></a>  -->
 		<div class="footer-title"><span class=red> — </span>Контакты<span class=red> — </span></div>
+<!-- 
       <a class=tel_bot onclick="ym(25019384,'reachGoal','phone');ga('send', 'event', 'phone', 'click') return true" href="tel:+79513112124
 " class="footer-phone">+7 (951) 311 21 24 <br>
 		  +7 (4712) 730-449  <br>
@@ -52,10 +53,23 @@
 		 +7 (951) 083 99 56 <br>
 	<div class="footer-address adr_b">	  г. Курск, ул. Карла Маркса, д. 66/3
 (с 9:00 до 19:00) </div><br>
-		   
 </a>
-		
-		
+		 -->
+    <ul>
+      <li><a href="tel:+79513112124">+7 (951) 311 21 24</a><br>
+      <a href="tel:+74712730449">+7 (4712) 730-449</a><br>
+      <span class="footer-address adr_b">г. Курск, ул. Верхняя Луговая, 6
+(с 9:00 до 19:00)</span>
+    </li>
+    </ul>
+
+    <ul>
+      <li><a href="tel:+79510839956">+7 (951) 083 99 56</a><br>
+      <span class="footer-address adr_b">г. Курск, ул. Карла Маркса, д. 66/3
+(с 9:00 до 19:00)</span>
+    </li>
+    </ul>
+
     </div>
   </div>
 </footer>
