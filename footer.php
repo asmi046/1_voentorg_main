@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-block">
-      <div class="footer-title"><span class=red> — </span>Информация<span class=red> — </span></div>
+      <div class="footer-title"><h2>Информация</h2></div>
       <ul>
         <li><a href="<?php echo get_the_permalink(7);?>">Оптовые поставки</a></li>
         <li><a href="<?php echo get_the_permalink(4325);?>">Производство ателье</a></li>
@@ -9,7 +9,7 @@
       </ul>
     </div>
     <div class="footer-block">
-      <div class="footer-title"><span class=red> — </span>Каталог товаров<span class=red> — </span></div>
+      <div class="footer-title"><h2>Каталог товаров</h2></div>
       
 	   <?php 
 		wp_nav_menu(array(
@@ -32,17 +32,17 @@
 	  
     </div>
     <div class="footer-block">
-		<div class="footer-title"><span class=red> — </span>Мы в соцсетях<span class=red> — </span></div>
+		<div class="footer-title"><h2>Мы в соцсетях</h2></div>
       <ul class="social-menu">
-        <li><a href="<?php echo carbon_get_theme_option('vk_lnk'); ?>" style="background-image: url(<?php echo get_template_directory_uri();?>/images/icons-vk.png);"></a></li>
-        <li><a href="<?php echo carbon_get_theme_option('ok_lnk'); ?>" style="background-image: url(<?php echo get_template_directory_uri();?>/images/icons-ok.png);"></a></li>
-        <li><a href="<?php echo carbon_get_theme_option('tg_lnk'); ?>" style="background-image: url(<?php echo get_template_directory_uri();?>/images/icons-tg.png);"></a></li>
+        <li><a href="<?php echo carbon_get_theme_option('vk_lnk'); ?>" style="background-image: url(<?php echo get_template_directory_uri();?>/images/icons/icons-vk.svg);"></a></li>
+        <li><a href="<?php echo carbon_get_theme_option('ok_lnk'); ?>" style="background-image: url(<?php echo get_template_directory_uri();?>/images/icons/icons-ok.svg);"></a></li>
+        <li><a href="<?php echo carbon_get_theme_option('tg_lnk'); ?>" style="background-image: url(<?php echo get_template_directory_uri();?>/images/icons/icons-tg.svg);"></a></li>
       </ul>
     </div>
     <div class="footer-block">
      
     <!--  <a onclick="ym(25019384,'reachGoal','phone');ga('send', 'event', 'phone', 'click') return true" href="tel:<?php// echo str_replace(array('(', ')', ' ', '-', '_'), '', carbon_get_theme_option('as_phone'))?>" class="footer-phone"><?php// echo carbon_get_theme_option('as_phone');?></a>  -->
-		<div class="footer-title"><span class=red> — </span>Контакты<span class=red> — </span></div>
+		<div class="footer-title"><h2>Контакты</h2></div>
 <!-- 
       <a class=tel_bot onclick="ym(25019384,'reachGoal','phone');ga('send', 'event', 'phone', 'click') return true" href="tel:+79513112124
 " class="footer-phone">+7 (951) 311 21 24 <br>
@@ -56,18 +56,16 @@
 </a>
 		 -->
     <ul>
-      <li><a href="tel:+79513112124">+7 (951) 311 21 24</a><br>
-      <a href="tel:+74712730449">+7 (4712) 730-449</a><br>
-      <span class="footer-address adr_b">г. Курск, ул. Верхняя Луговая, 6
-(с 9:00 до 19:00)</span>
-    </li>
+      <li><a class="callback__phone" href="tel:+79513112124">+7 (951) 311 21 24</a></li>
+      <li><a class="callback__phone" href="tel:+74712730449">+7 (4712) 730-449</a></li>
+      <li><span class="footer-address adr_b">г. Курск, ул. Верхняя Луговая, 6
+(с 9:00 до 19:00)</span></li>
     </ul>
 
     <ul>
-      <li><a href="tel:+79510839956">+7 (951) 083 99 56</a><br>
-      <span class="footer-address adr_b">г. Курск, ул. Карла Маркса, д. 66/3
-(с 9:00 до 19:00)</span>
-    </li>
+      <li><a class="callback__phone" href="tel:+79510839956">+7 (951) 083 99 56</a></li>
+      <li><span class="footer-address adr_b">г. Курск, ул. Карла Маркса, д. 66/3
+(с 9:00 до 19:00)</span></li>
     </ul>
 
     </div>
