@@ -13,3 +13,68 @@
 ul {
     padding: 0;
 }
+
+
+/* Страница категории */
+
+.cat_product_wrapper {
+    width:100%;
+    display: flex;
+}
+
+.cat_navigation {
+    flex:1;
+    margin-right: 30px;
+}
+
+.cat_navigation ul{ 
+    list-style: none;
+    margin-top:  0;
+    border: 1px solid #d9d9da;
+    border-radius: 10px;
+}
+
+.cat_navigation ul li{  
+    padding: 10px 20px;
+    border-bottom: 1px solid #d9d9da;
+}
+
+.cat_product_list {
+    flex:3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cat_product_list .prod-card__body{ 
+    flex: 0 1 32%;
+}
+
+/* Страница категории end */
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+	margin: 20px 0;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+	font-size: 14px;
+}
+
+.breadcrumbs__link {
+	color: #878686;
+}
+
+.breadcrumbs__link:hover {
+	text-decoration: underline;
+}
+
+.breadcrumbs__current {
+	color: #878686;
+}
+
+/* Хлебные крошки end*/

@@ -13,7 +13,7 @@
     "send_func": "scp -P 9999 -C functions.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_index": "scp -P 9999 -C index.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_footer": "scp -P 9999 -C footer.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
-    "send_one": "scp -P 9999 -C mailru-domain6RYVibgKzkiavY1a.html user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
+    "send_one": "scp -P 9999 -C category.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_carbon": "scp -P 9999 -C -r inc user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_carbon_fild": "scp -P 9999 -C -r inc/custom-field-options user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/inc/",
     "send_parts": "scp -P 9999 -C -r pars user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",

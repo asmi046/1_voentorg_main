@@ -2436,29 +2436,7 @@ article.post {
 	color: #666;
 }
 
-.breadcrumbs {
-	margin-top: 0;
-	margin-bottom: 10px;
-	font-weight: 400;
-	font-size: 12px;
-}
 
-.breadcrumbs a,
-.breadcrumbs span {
-	font-size: 14px;
-}
-
-.breadcrumbs__link {
-	color: #878686;
-}
-
-.breadcrumbs__link:hover {
-	text-decoration: underline;
-}
-
-.breadcrumbs__current {
-	color: #878686;
-}
 
 
 .site-main.product {

@@ -10,37 +10,33 @@
 				<h1 class="block-title"><span><?php single_cat_title();?></span></h1>
 			</header>
 
-			<div class ="dosCat">
+			<div class="cat_product_wrapper">
+				<div class ="cat_navigation">
+					<ul>
+						<?php 
+							$args = array(
+									'child_of' => 247,
+									'depth' => 2,
+									'title_li' => ""
+			
+							);
+							wp_list_categories($args);
+						?>
+					</ul>
+				</div>
+
+				<div class="cat_product_list">
 					<?php
-						if ( !empty($cat) ) :
-						  $args = array(
-							'title_li' => null,
-							'child_of' => $cat,
-							'depth' => 1,
-							'echo' => 0,
-							'hide_empty' => 0,
-							'show_count' => 0,
-							'show_option_none' => ""
-						  );
-						  echo "<ul>".wp_list_categories($args)."</ul>";
-						endif;
+						if ( have_posts() ) :
+							while ( have_posts() ) :
+								the_post(); 
+								get_template_part('template-parts/product-elem');	
+							endwhile;
+						endif;wp_reset_postdata();
 					?>
 				</div>
-			<div class="products archive-products__wrap">
-				<?php
-		    if ( have_posts() ) :
-			/* Start the Loop */
-				while ( have_posts() ) :
-					the_post(); 
-					get_template_part('template-parts/product-loop');
-
-					?>
-
-			<?php	
-				endwhile;
-			endif;wp_reset_postdata();
-		?>
 			</div>
+			
 			
 			
 			<div class="category-descr">
