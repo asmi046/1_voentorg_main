@@ -36,7 +36,7 @@
 			<!-- <?php 
 				$args = array(
 					'posts_per_page' => 4,
-'cat' => 272,
+					'cat' => 272,
 				);
 				$query = new WP_Query($args);
 				if($query->have_posts()):
