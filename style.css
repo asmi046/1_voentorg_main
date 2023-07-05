@@ -1794,16 +1794,16 @@ handheld {
 	padding-left: 10px;
 	background-image: url(http://1voentorg.ru/wp-content/uploads/2020/04/plank.png); */
 	position: absolute;
-    bottom: 6%;
-    left: 4%;
+	bottom: 6%;
+	left: 4%;
 	font-family: 'Jost';
-    line-height: 25px;
+	line-height: 25px;
 	width: 90%;
-    border-radius: 12px;
+	border-radius: 12px;
 	text-transform: uppercase;
-    font-size: 18px;
+	font-size: 18px;
 	padding: 2%;
-    background-color: var(--other-color);
+	background-color: var(--other-color);
 }
 
 .section-title {
@@ -2028,16 +2028,17 @@ handheld {
 	position: relative;
 }
 
-.footer .callback__phone::before{
+.footer .callback__phone::before {
 	content: '';
 	position: absolute;
-    height: 13px;
+	height: 13px;
 	left: -18px;
-    bottom: 7px;
-    width: 13px;
-    background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMyAxMyI+DQogIDxpbWFnZSBpZD0icGhvbmUiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBMEFBQUFOQ0FZQUFBQnk2K1I4QUFBQUJITkNTVlFJQ0FnSWZBaGtpQUFBQVBOSlJFRlVLRk9OMEN0TEJVRWNodkhmU2VJbWcyQ1IyV0FUVVRCb0ZoU2JWWXlDV1V4Vy9RNUd2NERZTklzWUxFYnhVa1J3RmpSNFFReG5pOEtSMFQyeTRtWFBXNGJoL3o3enpFeXJIY01lSm56bUdWTlppSy9WL3RlbDFZN2hCbmx0T3B5RmVOc0VuYVRUYTZXWkxNU2pKbWdiSzdYU2FoYmlWaE8waUoycWRJNWtlbXlDK25HSE40eG1JVDc4QjZSWnE5UHBLSXQ4QTV1WXkwSTg2QlZLdGpQMFlUb0xNWm4vekljcHBTenlTUnpqR3ZOZHNDenlRU3hWaDE3aC9ndXF3Rm5zNHduTE9NVWh4bXJheTI5UXpiaUxFYVJmVEtaNlhuNUFGWmpldUk0MURQUUVkVXRsa1NkNEFlbmE0eGpDeFR2emQxNHBrQ1BNS3dBQUFBQkpSVTVFcmtKZ2dnPT0iLz4NCjwvc3ZnPg0K");
+	bottom: 7px;
+	width: 13px;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMyAxMyI+DQogIDxpbWFnZSBpZD0icGhvbmUiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBMEFBQUFOQ0FZQUFBQnk2K1I4QUFBQUJITkNTVlFJQ0FnSWZBaGtpQUFBQVBOSlJFRlVLRk9OMEN0TEJVRWNodkhmU2VJbWcyQ1IyV0FUVVRCb0ZoU2JWWXlDV1V4Vy9RNUd2NERZTklzWUxFYnhVa1J3RmpSNFFReG5pOEtSMFQyeTRtWFBXNGJoL3o3enpFeXJIY01lSm56bUdWTlppSy9WL3RlbDFZN2hCbmx0T3B5RmVOc0VuYVRUYTZXWkxNU2pKbWdiSzdYU2FoYmlWaE8waUoycWRJNWtlbXlDK25HSE40eG1JVDc4QjZSWnE5UHBLSXQ4QTV1WXkwSTg2QlZLdGpQMFlUb0xNWm4vekljcHBTenlTUnpqR3ZOZHNDenlRU3hWaDE3aC9ndXF3Rm5zNHduTE9NVWh4bXJheTI5UXpiaUxFYVJmVEtaNlhuNUFGWmpldUk0MURQUUVkVXRsa1NkNEFlbmE0eGpDeFR2emQxNHBrQ1BNS3dBQUFBQkpSVTVFcmtKZ2dnPT0iLz4NCjwvc3ZnPg0K");
 }
+
 /* .footer li:before {
 	content: '>';
 	position: absolute;
@@ -2071,6 +2072,7 @@ handheld {
 .footer-address {
 	color: #fff;
 }
+
 /* .footer-phone {
 	display: block;
 	font-weight: 500;
@@ -2855,6 +2857,7 @@ article.post {
 	background-color: #fff;
 }
 
+/* 
 .cat-item:hover>ul.children {
 	display: block;
 }
@@ -2869,35 +2872,22 @@ article.post {
 
 .cat-item:hover~.children {
 	display: block;
-}
+} */
 
 .cat-item .children {
-	position: absolute;
-	left: 100%;
-	top: 37px;
-	bottom: 0;
-	min-width: 600px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
+	display: none;
+	flex-direction: column;
+}
+
+.cat-item .active .children {
 	display: flex;
-	justify-content: space-between;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-	flex-wrap: wrap;
-	background-color: #ecedef;
 }
 
 .cat-item .children li {
-	width: 49%;
 	background-color: #ecedef;
 }
 
 .cat-item .children li a {
-	padding-left: 10px;
 	color: #000;
 	text-transform: none;
 }
@@ -3021,7 +3011,8 @@ article.post {
 		padding-top: 10px;
 		border-top: 1px solid lightgray;
 	}
-/* 
+
+	/* 
 	.product-loop:hover {
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
@@ -3035,7 +3026,7 @@ article.post {
 		justify-content: center;
 
 	} */
-/* 
+	/* 
 	.product-loop {
 		margin: 20px;
 	} */
@@ -3299,7 +3290,8 @@ article.post {
 	.header-bottom-bg {
 		display: none;
 	}
-/* 
+
+	/* 
 	.is-home .product-loop {
 		max-width: inherit;
 		width: 86%;
@@ -3384,7 +3376,8 @@ article.post {
 		background-color: #005c3d;
 		color: white;
 	}
-/* 
+
+	/* 
 	.archive-products__wrap .product-loop,
 	.product-loop {
 		max-width: 100%;
