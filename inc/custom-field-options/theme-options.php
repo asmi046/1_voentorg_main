@@ -113,6 +113,13 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           ->set_width(100),
     ) );
 
+    Container::make( 'term_meta', __( 'Дополнительные поля для категорий', 'crb' ) )
+    ->where( 'term_taxonomy', '=', 'category' ) 
+    ->add_fields( array(
+        Field::make('image', 'cat_preview', 'Превю категории'),
+    ) );
+
+
 Container::make('post_meta', 'un_custom_post', 'Доп поля')
   ->add_fields( array(
         Field::make( 'text', 'price_n', 'Цена')
