@@ -10,7 +10,7 @@
 								foreach($pict as $item) { 
 									?>
 								<div class="slider__item">
-									<img src="<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0];?>" alt="">
+									<img loading="lazy" src="<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0];?>" alt="">
 									<? if ( !empty($item['slider_discount'])) { ?>
 										<div class="info-sl__discounts">
 											<? echo $item['slider_discount']; ?>
