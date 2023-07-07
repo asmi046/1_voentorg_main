@@ -42,7 +42,9 @@ function my_assets() {
 		$all_version = "1.0.1";
 		wp_enqueue_style("null-style", get_template_directory_uri()."/css/null.css", array(), $all_version, 'all'); //Очистка стандартных стилей
 		wp_enqueue_style("font-style", get_template_directory_uri()."/css/fonts.css", array(), $all_version, 'all'); //Модальные окна (стили)
+		wp_enqueue_style("font-icon-style", get_template_directory_uri()."/fonts/shop/style.css", array(), $all_version, 'all');
 		wp_enqueue_style("newstyle-style", get_template_directory_uri()."/css/new_style.css", array(), $all_version, 'all'); //Файл с нововведениями
+		wp_enqueue_style("newproduct-card-style", get_template_directory_uri()."/css/new_product_card.css", array(), $all_version, 'all'); //Файл с нововведениями Карточки товара
 		wp_enqueue_style("font-head", get_template_directory_uri()."/css/header.css", array(), $all_version, 'all'); 
 		
 		// Подключение скриптов

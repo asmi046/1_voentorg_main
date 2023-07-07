@@ -53,87 +53,33 @@ global $post;
 		</div>
 
 
-		<div class="entry-content">
-			<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title tovName">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title tovName"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				// mast_posted_on();
-				// mast_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-			<div class="tab_item">
-				<?php 
-					if(carbon_get_the_post_meta('un_derscr'))
-						echo  apply_filters('the_content', carbon_get_the_post_meta('un_derscr'));
-					else 
-						echo apply_filters( 'the_content', get_the_content());
-				?>
-			</div>
-				<div class = "tovSKU" style = "display:none;"><?php echo carbon_get_the_post_meta('sku_n')?></div>
-				<div class = "tovID" style = "display:none;"><?php the_ID(); ?></div>
+		<div class="entry-content text_decoration">
+		
+			<h1><?php the_title(); ?></h1>
 			
-				<?php if(carbon_get_the_post_meta('un_growth')):?>
-			<!-- <div class="content-block">
-					<?php $array_un_growth = explode(',', carbon_get_the_post_meta('un_growth'));
+			<p class="sku_in_page">Артикул: <span><?php echo carbon_get_the_post_meta('sku_n')?></span></p>
+			
+			<div class = "tovSKU" style = "display:none;"><?php echo carbon_get_the_post_meta('sku_n')?></div>
+			<div class = "tovID" style = "display:none;"><?php the_ID(); ?></div>
+			
+			<?php 
+				if ( carbon_get_the_post_meta('un_short_derscr') ) {
+			?>
+				<p><?php echo apply_filters('the_content', carbon_get_the_post_meta( 'un_short_derscr' ));?></p>
+			<?php
+				}
+			?>	
 
-				?>
+			<?php 
+				if ( carbon_get_the_post_meta('un_specifications') ) {
+			?>
+				<p><?php echo apply_filters('the_content', carbon_get_the_post_meta( 'un_specifications' ));?></p>		
+			<?php
+				}
+			?>	
 				
-				
-				
-				<label for="un_growth" >Рост:</label>
-				
-				<select name="un_growth" id="un_growth" class = "tovRost">
-					<?php foreach ($array_un_growth as $un_growth):?>
-						<option value="<?php echo $un_growth?>"><?php echo $un_growth?></option>
-					<?php endforeach;?>
-				</select>
-			</div> -->
-				<?php endif;?>
-				<?php if(carbon_get_the_post_meta('un_size')):?>
-			<!-- <div class="content-block">
-					<?php $array_un_size = explode(',', carbon_get_the_post_meta('un_size'));
 
-				?>
-				<label for="un_size" >Размеры:</label>
 
-				<select name="un_size" id="un_size" class = "tovRazmer">
-					<?php foreach ($array_un_size as $un_size):?>
-						<option value="<?php echo $un_size?>"><?php echo $un_size?></option>
-					<?php endforeach;?>
-				</select>
-			</div> -->
-				<?php endif;?>
-				<?php if(carbon_get_the_post_meta('un_color')):?>
-			<!-- <div class="content-block">
-					<?php $array_un_color = explode(',', carbon_get_the_post_meta('un_color'));
-
-				?>
-				<label for="un_color" >Цвет:</label>
-
-				<select name="un_color" id="un_color" class = "tovColor">
-					<?php foreach ($array_un_color as $un_color):?>
-						<option value="<?php echo $un_color?>"><?php echo $un_color?></option>
-					<?php endforeach;?>
-				</select>
-			</div> -->
-				<?php endif;?>
-			<div class="content-block">
-				<?php echo apply_filters('the_content', carbon_get_the_post_meta( 'un_specifications' ));?>
-			</div>
-			<div class="content-block">
-				<?php echo apply_filters('the_content', carbon_get_the_post_meta( 'un_short_derscr' ));?>
-			</div>
 			<div class="content-block content-block__price">
 				<?php if(carbon_get_the_post_meta('price_old')):?>
 					<span class="single-price__old"><?php echo carbon_get_the_post_meta('price_old');?> руб.</span>
@@ -142,55 +88,41 @@ global $post;
 					<span class="single-price"><?php echo carbon_get_the_post_meta('price_n');?> руб.</span>
 				<?php endif;?>
 			</div>
-			<div class="btn-block">
-				<div class="link-consultation button" id="order-link"><span></span>Получить консультацию</div>
-			</div>
 			
-			<?php
-			// the_content( sprintf(
-			// 	wp_kses(
-			// 		/* translators: %s: Name of current post. Only visible to screen readers */
-			// 		__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mast' ),
-			// 		array(
-			// 			'span' => array(
-			// 				'class' => array(),
-			// 			),
-			// 		)
-			// 	),
-			// 	get_the_title()
-			// ) );
+			<div class= "by_blk">
+				<a href="#" class="btn buy_btn">Добавить в корзину</a>
+			</div>
+		</div>
 
-			// wp_link_pages( array(
-			// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mast' ),
-			// 	'after'  => '</div>',
-			// ) );
+	
+	</div>
+	
+	<div class="tovar_bottom_part text_decoration">
+		<?php 
+			if ( carbon_get_the_post_meta('un_derscr') || (get_the_content() !== "") ) {
+		?>
+			<h2>Описание</h2>
+			<?php 
+				if(carbon_get_the_post_meta('un_derscr'))
+					echo  apply_filters('the_content', carbon_get_the_post_meta('un_derscr'));
+				else 
+					echo apply_filters( 'the_content', get_the_content());
 			?>
-		</div><!-- .entry-content -->
 
-	
+		<?php
+			}
+		?>
+		
+
+		<?php 
+			if ( carbon_get_the_post_meta('un_application') ) {
+		?>
+			<h2>Все характеристики</h2>
+			<?php echo  apply_filters('the_content', carbon_get_the_post_meta('un_application'));?>
+		
+		<?php
+			}
+		?>
+
 	</div>
-	
-	<?php if(carbon_get_the_post_meta('un_derscr')||(!empty(get_the_content()))):?>
-	<div class="tab-wrapper">
-		<div class="tabs">
-			<span class="tab">Описание</span>
-			<?php if(!empty(carbon_get_the_post_meta('un_application'))):?>
-				<span class="tab">Характеристики</span>
-			<?php endif;?>
-		</div>
-		<div class="tab_content">
-			<div class="tab_item">
-				<?php 
-					if(carbon_get_the_post_meta('un_derscr'))
-						echo  apply_filters('the_content', carbon_get_the_post_meta('un_derscr'));
-					else 
-						echo apply_filters( 'the_content', get_the_content());
-				?>
-			</div>
-			<div class="tab_item">
-				<?php echo  apply_filters('the_content', carbon_get_the_post_meta('un_application'));?>
-			</div>
-		</div>
-	</div>
-	<?php endif;?>
 </article><!-- #post-<?php the_ID(); ?> -->

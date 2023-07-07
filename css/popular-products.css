@@ -1,10 +1,11 @@
 .products {
     font-family: 'Jost';
-    padding: 73px 0 30px 0;
+    padding: 30px 0 30px 0;
 }
 
 .products h2 {
     text-align: center;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -45,7 +46,7 @@
 
 .prod-card__link {
     padding: 20px 0;
-    max-height: 240px;
+    height: 280px;
     flex: 0 0 158px;
     max-width: 241px;
 }
