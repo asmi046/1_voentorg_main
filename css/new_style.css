@@ -31,12 +31,23 @@ ul {
 .cat_navigation ul {
     list-style: none;
     margin-top: 0;
+    border: 1px solid #d9d9da;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .cat_navigation ul li {
-    padding: 10px 20px;
-    margin: 5px 0;
-    border: 1px solid #d9d9da;
+    border-radius: 10px;
+}
+
+.cat_navigation ul li a:hover{
+    background-color: var(--catalog-color);
+}
+
+.cat_navigation ul li a{ 
+    padding: 10px 5%;
+    width: 90%;
+    display: inline-block;
 }
 
 .cat_product_list {
