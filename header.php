@@ -55,6 +55,8 @@
 </head> 
 <body>
 
+<?php get_template_part('template-parts/mobile-catalog-menu'); ?>
+<?php get_template_part('template-parts/mobile-bottom-menu'); ?>
 <?php get_template_part('template-parts/header-top'); ?>
 
 <section class="header_info">

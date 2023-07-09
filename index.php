@@ -50,14 +50,7 @@
 	</div> -->
 	
 <!-- </section> -->
-<a href="http://1voentorg.ru/category/%d1%82%d0%be%d0%b2%d0%b0%d1%80%d1%8b-%d1%81%d0%be-%d1%81%d0%ba%d0%b8%d0%b4%d0%ba%d0%be%d0%b9/">
-<section class="banner-sale">
-	<div class="container" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('action_img'), 'full')[0];?>)">
-		<div class="banner-sale__content">
-			<div class="banner-sale__content-title"><span><?php echo carbon_get_theme_option('action_zag');?></span> <?php echo carbon_get_theme_option('action_text');?></div>
-		</div>
-	</div>
-</section></a>
+
 
 <?php get_template_part('template-parts/new-products');?>
 <!-- 

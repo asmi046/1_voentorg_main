@@ -1,0 +1,119 @@
+.mobile_catalog_menu {
+    width:100%;
+    height: calc(100% - 61px);
+    display: block;
+    position: fixed;
+    z-index: 90000;
+    background-color: white;
+    left:900px;
+    transition: all 0.5s ease !important;
+    padding: 45px 20px 0 20px;
+    left: 110%;
+    overflow: auto;
+}
+
+.mobMenuWrappe {
+    width: 100%;
+}
+
+.mcm_active {
+    left:0;
+}
+
+.catalogMenuPunct {
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    margin: 7px 0;
+}
+
+  .catalogMenuPunct .all_list_link{
+    padding: 0 0 10px 0;
+  }
+
+  .catalogMenuPunct._active .catalogMenuPunctTitle::before {
+    transform: rotate(-180deg);
+  }
+
+  .catalogMenuPunct .catalogMenuPunctTitle_sub{
+    display: none;
+  }
+
+  .catalogMenuPunct._active{
+    box-shadow: 0 0 10px rgb(0 0 0 / 7%);
+    border: none;
+    border-radius: 11px;
+
+  }
+
+  .catalogMenuPunct._active .catalogMenuPunctTitle_sub{
+    display: block;
+    padding: 0 15px 10px 15px;
+    margin: 20px 0;
+  }
+
+  .catalogMenuPunctTitle::before {
+    position: absolute;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    top: calc((100% / 2) - 8px);
+  }
+
+  .catalogMenuPunctTitle {
+    width: 100%;
+    display: flex;
+
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+
+  }
+
+  .catalogMenuPunctTitle .cmpImg {
+    max-width: 50px;
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .catalogMenuPunctTitle .cmpTitle {
+    display: flex;
+  }
+
+  .catalogMenuPunctTitle .cmpTitle span {
+    margin: auto auto auto 0;
+  }
+
+
+  .catalogMenuPunctTitle .cmpImg img {
+    width: 100%;
+    margin: auto;
+
+  }
+
+  .catalogMenuPunctTitle_sub {
+    width: 100%
+  }
+
+
+  .catalogMenuPunctTitle_sub h2{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .catalogMenuPunctTitle_sub ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin:  10px 0;
+    justify-content: space-between;
+  }
+
+  .catalogMenuPunctTitle_sub ul li {
+    width:47%;
+    padding: 5px 0;
+  }
+
+  .catalogMenuPunctTitle_sub ul li a {
+    padding: 0;
+    margin-bottom: 20px;
+  }

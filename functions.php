@@ -45,12 +45,15 @@ function my_assets() {
 		wp_enqueue_style("font-icon-style", get_template_directory_uri()."/fonts/shop/style.css", array(), $all_version, 'all');
 		wp_enqueue_style("newstyle-style", get_template_directory_uri()."/css/new_style.css", array(), $all_version, 'all'); //Файл с нововведениями
 		wp_enqueue_style("newproduct-card-style", get_template_directory_uri()."/css/new_product_card.css", array(), $all_version, 'all'); //Файл с нововведениями Карточки товара
+		wp_enqueue_style("bottom-mobile-menu-style", get_template_directory_uri()."/css/mobile_bottom_menu.css", array(), $all_version, 'all'); //Нижнее мобильное меню
+		wp_enqueue_style("mobile-catalog-style", get_template_directory_uri()."/css/mobile_catalog_menu.css", array(), $all_version, 'all'); // Мобильный каталог
 		wp_enqueue_style("font-head", get_template_directory_uri()."/css/header.css", array(), $all_version, 'all'); 
 		
 		// Подключение скриптов
 		
 		wp_enqueue_script( 'jquery');
 
+		wp_enqueue_script( 'mobile_menu_js', get_template_directory_uri().'/js/mobile_catalog_menu.js', array(), $all_version , true); //Мобильное меню
 		wp_enqueue_script( 'main_js', get_template_directory_uri().'/js/main.js', array(), $all_version , true); //Модальные окна
 		
 		// if ( is_page(164))

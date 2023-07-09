@@ -139,6 +139,33 @@ ul {
     flex: 0 1 32%;
 }
 
+@media (max-width: 1024px) { 
+    .entry-content{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .cat_product_wrapper {
+        flex-direction: column;
+    }
+
+    .cat_product_wrapper .cat_navigation {
+        display: none;
+    }
+}
+
+@media (max-width: 543px) {
+    .cat_product_wrapper { 
+        flex-direction: column;
+    }
+
+    .cat_product_list .prod-card__body,
+    .cat_product_wrapper .prod-card__body {
+        flex: 0 1 100%;
+    }
+}
+
 /* Страница категории end */
 
 
@@ -276,6 +303,18 @@ ul {
 .header-contacts a {
 	font-weight: 500;
 	font-size: 24px;
+}
+
+@media (max-width: 830px) { 
+    .header-contacts {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) { 
+    .searchform {
+        display: none;
+    }
 }
 
 /* Блок шапки с логотипом  end*/

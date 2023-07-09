@@ -56,7 +56,6 @@ $(document).ready(function($) {
 	        slidesToShow: 1,
 	        slidesToScroll: 1,
 	        centerMode: false,
-	        arrows: true,
 	      }
 	    }],
 	  });
@@ -68,15 +67,6 @@ $(document).ready(function($) {
 	    arrows: false,
 	    centerMode: true,
 	    focusOnSelect: true,
-	    responsive: [{
-	      breakpoint: 424,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1,
-	        centerMode: false,
-	        arrows: true,
-	      }
-	    }],
 	  });
 
 	  jQuery('.tab_item').not(':first').hide();

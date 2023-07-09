@@ -122,9 +122,20 @@
 
 @media (max-width: 860px) {
 .cards-item__img-l {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 100%;
-    flex: 0 1 100%; }
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width:100%;
+}
+
+.cards { 
+    flex-direction: column;
+    max-height: unset;
+}
+
+.cards-item__img-l img {
+    float:right;
+}
+
 }
 
 @media (max-width: 768px) { 

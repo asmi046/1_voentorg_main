@@ -79,6 +79,8 @@
 
 .slick-slider .slick-slide {
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 
@@ -247,6 +249,10 @@
   .slick-next {
     right: -1.5%;
   }
+
+  .slide {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 640px) {
@@ -317,6 +323,12 @@
     background-position: center;
     background-size: 30%;
   }
+
+  .info-sl__text-new p {
+    display: none;
+  }
+
+
 }
 
 
