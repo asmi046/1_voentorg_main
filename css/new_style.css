@@ -150,6 +150,10 @@ ul {
         flex-direction: column;
     }
 
+    .cat_navigation {
+        margin-right: 0;
+    }
+
     .cat_product_wrapper .cat_navigation {
         display: none;
     }

@@ -39,7 +39,7 @@ function my_assets() {
 
 		// Подключение стилей 
 
-		$all_version = "1.0.1";
+		$all_version = "1.0.12";
 		wp_enqueue_style("null-style", get_template_directory_uri()."/css/null.css", array(), $all_version, 'all'); //Очистка стандартных стилей
 		wp_enqueue_style("font-style", get_template_directory_uri()."/css/fonts.css", array(), $all_version, 'all'); //Модальные окна (стили)
 		wp_enqueue_style("font-icon-style", get_template_directory_uri()."/fonts/shop/style.css", array(), $all_version, 'all');
