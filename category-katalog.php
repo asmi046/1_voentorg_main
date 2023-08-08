@@ -26,10 +26,10 @@
 						<a href="<? get_category_link($cat->term_id) ?>" class="cat_in_page_blk">
 							<div class="catimg">
 								<? 
-									$img = carbon_get_term_meta($cat->term_id, "image");
+									$img = carbon_get_term_meta($cat->term_id, "cat_preview");
 									if (!empty($img)){
 								?>
-									<img src="<? echo $img; ?>" alt="<?php echo $cat->name; ?>" title="<?php echo $cat->name; ?>">
+									<img src="<? echo wp_get_attachment_url($img); ?>" alt="<?php echo $cat->name; ?>" title="<?php echo $cat->name; ?>">
 								<?php 
 									} else {
 								?>
