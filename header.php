@@ -51,6 +51,7 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/92461276" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 	
+<script src="//code.jivo.ru/widget/XNDZgfU9bC" async></script>
 	
 </head> 
 <body>

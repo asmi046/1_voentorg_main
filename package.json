@@ -8,6 +8,7 @@
     "clear_r": "ssh user1122@1voentorg.ru \"rm  /www/1/wp-content/themes/voentorg/*.*\"",
     "send_r": "scp -P 9999 -C *.php *.png *.css user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_ms": "scp -P 9999 -C *.css user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
+    "send_one1": "scp -P 9999 -C category-katalog.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_head": "scp -P 9999 -C header.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
     "send_head-top": "scp -P 9999 -C header.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/template_parts/",
     "send_func": "scp -P 9999 -C functions.php user1122@1voentorg.ru:www/1/wp-content/themes/voentorg/",
