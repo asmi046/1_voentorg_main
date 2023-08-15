@@ -1,6 +1,6 @@
 <?php get_header("index"); ?>
 <?php get_template_part('template-parts/slick-slider');?>
-<section class="little-sliders">
+<!-- <section class="little-sliders">
 	<div class="container">
 		<?php if(carbon_get_theme_option('as_little_banner_link_1')):?>
 		<a href="<?php echo carbon_get_theme_option('as_little_banner_link_1');?>" class="little-sliders__item" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('as_little_banner_img_1'), 'full')[0];?>);">
@@ -18,10 +18,17 @@
 		</a>
 		<?php endif;?>
 	</div>
-</section>
+</section> -->
+
+
 <?php get_template_part('template-parts/popular-products');?>
 
-<?php get_template_part('template-parts/cardinfo');?>
+<?php // get_template_part('template-parts/cardinfo');?>
+<section class="products">
+	<div class="container">
+		<?php get_template_part('template-parts/cat-input');?>
+	</div>
+</section>	
 
 <?php get_template_part('template-parts/favorites-products');?>
 <!-- <section class="products-section"> -->
