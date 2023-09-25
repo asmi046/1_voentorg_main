@@ -7,7 +7,7 @@
 					<?
 					$args = array(
 						'posts_per_page' => 8,
-						'cat' => 292,
+						'cat' => 308,
 					);
 
 					$query = new WP_Query($args);

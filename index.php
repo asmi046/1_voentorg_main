@@ -30,33 +30,6 @@
 	</div>
 </section>	
 
-<?php get_template_part('template-parts/favorites-products');?>
-<!-- <section class="products-section"> -->
-
-<!-- 	
-	<div class="container">
-		<h2 class="section-title"><span class=green> — </span> Популярные товары<span class=green> —</span> </h2>
-	</div> -->
-
-	<!-- <div class="container">
-		<div class="products-wrapper"> -->
-			<!-- <?php 
-				$args = array(
-					'posts_per_page' => 4,
-					'cat' => 272,
-				);
-				$query = new WP_Query($args);
-				if($query->have_posts()):
-					while($query->have_posts()):
-						$query->the_post();
-						get_template_part('template-parts/product-loop');
-					endwhile;
-				endif; wp_reset_postdata();
-			?> -->
-		<!-- </div>
-	</div> -->
-	
-<!-- </section> -->
 
 
 <?php get_template_part('template-parts/new-products');?>
