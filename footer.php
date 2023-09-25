@@ -56,17 +56,31 @@
 </a>
 		 -->
     <ul>
+      <li><span class="footer-address adr_b">1-й Военторг г.Курск, ул.Верхняя Луговая, д.6 (ост. Ц.Рынок, ТЦ "ПОКРОВСКИЙ")</span></li>
       <li><a class="callback__phone" href="tel:+79513112124">+7 (951) 311 21 24</a></li>
       <li><a class="callback__phone" href="tel:+74712730449">+7 (4712) 730-449</a></li>
-      <li><span class="footer-address adr_b">г. Курск, ул. Верхняя Луговая, 6
-(с 9:00 до 19:00)</span></li>
+    </ul>
+    
+    <ul>
+      <li><span class="footer-address adr_b">1-й Военторг г.Курск, ул.Карла Маркса, д.66/3 т.</span></li>
+      <li><a class="callback__phone" href="tel:+79510889956">+7 (951) 088 99 56</a></li>
+    </ul>
+    
+    <ul>
+      <li><span class="footer-address adr_b">1-й Военторг Жуковский г.Курск, пос.им.М.Жукова, квартал 5, д.18, т.</span></li>
+      <li><a class="callback__phone" href="tel:+79510818505">+7 (951) 081 85 05</a></li>
+    </ul>
+    
+    <ul>
+      <li><span class="footer-address adr_b">1-й Военторг Валуйки Белгородская область, Валуйки, ул. 9 Января</span></li>
+      <li><a class="callback__phone" href="tel:+79040971614">+7 (904) 097 16 14</a></li>
+    </ul>
+    
+    <ul>
+      <li><span class="footer-address adr_b">1-й Воентор Солоти Белгородская область,Валуйки с. Солоти, ул. Советская , 21. т.</span></li>
+      <li><a class="callback__phone" href="tel:+79040971614">+7 (904) 097 16 14</a></li>
     </ul>
 
-    <ul>
-      <li><a class="callback__phone" href="tel:+79510839956">+7 (951) 083 99 56</a></li>
-      <li><span class="footer-address adr_b">г. Курск, ул. Карла Маркса, д. 66/3
-(с 9:00 до 19:00)</span></li>
-    </ul>
 
     </div>
   </div>
