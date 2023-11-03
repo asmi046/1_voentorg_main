@@ -353,4 +353,140 @@ function mapinput_fn( $atts ) {
 		}
 add_shortcode( 'mapinput', 'mapinput_fn' );
 
+
+add_action( 'rest_api_init', function(){
+	
+	register_meta( 
+		'post', 
+		'_price_n', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+	
+
+	register_meta( 
+		'post', 
+		'_price_old', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+	register_meta( 
+		'post', 
+		'_sku_n', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+	register_meta( 
+		'post', 
+		'_nal', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+  register_meta( 
+		'post', 
+		'_un_specifications', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+  register_meta( 
+		'post', 
+		'_un_short_derscr', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+  register_meta( 
+		'post', 
+		'_un_derscr', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+  register_meta( 
+		'post', 
+		'_un_application', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+	register_meta( 
+		'post', 
+		'_un_gallery_img_1', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+	register_meta( 
+		'post', 
+		'_cat_preview', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+	register_meta( 
+		'post', 
+		'_un_gallery_img_2', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+	register_meta( 
+		'post', 
+		'_un_gallery_img_3', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+	register_meta( 
+		'post', 
+		'_un_gallery_img_4', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+
+} );
+
 ?>
