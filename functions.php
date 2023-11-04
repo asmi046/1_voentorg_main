@@ -448,7 +448,7 @@ add_action( 'rest_api_init', function(){
 	);
 
 	register_meta( 
-		'post', 
+		'term', 
 		'_cat_preview', 
 		array(
 			'type' => 'string',
@@ -480,6 +480,16 @@ add_action( 'rest_api_init', function(){
 	register_meta( 
 		'post', 
 		'_un_gallery_img_4', 
+		array(
+			'type' => 'string',
+			'single' => true,
+			'show_in_rest' => true
+		)
+	);
+	
+  register_meta( 
+		'post', 
+		"_aioseo_description", 
 		array(
 			'type' => 'string',
 			'single' => true,
